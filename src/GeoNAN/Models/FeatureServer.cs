@@ -8,23 +8,23 @@ namespace GeoNAN.Models
    public class FeatureServer
    {
       public string serviceDescription { get; set; }
-      public List<FsLayer> layers { get; set; }
-      public List<FsTable> tables { get; set; }
+      public List<FeatureServerLayer> layers { get; set; }
+      public List<FeatureServerTable> tables { get; set; }
       public FeatureServer(string serviceDesc)
       {
          serviceDescription = serviceDesc;
-         layers = new List<FsLayer>();
-         tables = new List<FsTable>();
+         layers = new List<FeatureServerLayer>();
+         tables = new List<FeatureServerTable>();
       }
    }
 
-   public class FsLayer
+   public class FeatureServerLayer
    {
       public int id { get; set; }
       public string name { get; set; }
    }
 
-   public class FsTable
+   public class FeatureServerTable
    {
       public int id { get; set; }
       public string name { get; set; }
