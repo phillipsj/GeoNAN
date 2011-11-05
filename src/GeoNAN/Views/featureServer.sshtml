@@ -1,0 +1,20 @@
+﻿@Master['layout']
+
+@Section['Content']
+<p>This page lists the layers and tables that are exposed on this resource.</p>
+<br/>
+Service Description: @Model.serviceDescription
+<br/>
+Layers: 
+   <ul>
+   @Each.layers
+	   <li><a>@Current.name</a> @Current.id</li>
+	@EndEach
+   </ul>
+Tables:
+   <ul>
+   @Each.tables
+	   <li><a>@Current.name</a> @Current.id</li>
+	@EndEach
+   </ul>
+@EndSection

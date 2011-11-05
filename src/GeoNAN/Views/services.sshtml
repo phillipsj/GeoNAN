@@ -1,0 +1,9 @@
+﻿@Master['layout']
+
+@Section['Content']
+<ul>
+@Each
+<li><a href="@Path['~/services/@Current/featureServer'];">@Current</a></li>
+@EndEach
+</ul>
+@EndSection

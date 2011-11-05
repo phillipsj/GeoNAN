@@ -1,0 +1,5 @@
+﻿@Master['layout']
+
+@Section['Content']
+<p>This is just a place holder home page.</p>
+@EndSection
