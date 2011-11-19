@@ -26,13 +26,13 @@ namespace GeoNAN
          Get["/services/{resourceName}/featureserver"] = x =>
          {
             var fs = new FeatureServer(x.resourceName);
-            fs.layers = new List<FeatureServerLayer> { 
-               new FeatureServerLayer { id = 0, name = "woot"},
-               new FeatureServerLayer { id = 1, name = "wootacious"}
+            fs.layers = new List<FeatureServerLayerInfo> { 
+               new FeatureServerLayerInfo { id = 0, name = "woot"},
+               new FeatureServerLayerInfo { id = 1, name = "wootacious"}
             };
-            fs.tables = new List<FeatureServerTable> { 
-               new FeatureServerTable { id = 0, name = "negative"},
-               new FeatureServerTable { id = 1, name = "supernegative"}
+            fs.tables = new List<FeatureServerTableInfo> { 
+               new FeatureServerTableInfo { id = 0, name = "negative"},
+               new FeatureServerTableInfo { id = 1, name = "supernegative"}
             };
 
             if (Request.Query["f"] == "json")
