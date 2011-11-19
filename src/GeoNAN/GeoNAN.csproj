@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\FeatureServer.cs" />
+    <Compile Include="Persistence\GeoRepository.cs" />
     <Compile Include="ServerModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
