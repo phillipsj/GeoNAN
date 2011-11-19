@@ -14,6 +14,12 @@ GeoNAN is a lightweight geospatial data server written in .NET using [Nancy](htt
 * [PostGIS](http://postgis.refractions.net/)
 * More geometry types
 
+## Other tools
+
+I am choosing not to include the Spatialite tools.  If you need these tools, please follow the link above.  The Spatialite GUI is very useful
+and is the tool used to create the spatialite database.  There is also a lightweight GIS viewer that can also be downloaded on the Spatialite
+website for viewing the data.
+
 ## Copyright
 
 Copyright © 2011 Jamie Phillips
