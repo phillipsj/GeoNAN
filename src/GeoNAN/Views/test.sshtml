@@ -1,4 +1,4 @@
-﻿@Master['MasterPage']
+﻿@Master['layout']
 
 @Section['Content']
 <p>This is just a test page to make sure the server is running.</p>
